@@ -30,6 +30,8 @@ function renderizarTela(dados) {
     } else {
         dados.forEach(repo => {
             const card = criarCard(repo);
+
+            
             listaRepositorios.appendChild(card);
         });
         containerResultados.appendChild(listaRepositorios);
