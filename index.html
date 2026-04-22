@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevProfile - Busca de Repositórios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>DevProfile</h1>
+    </header>
+
+    <main>
+        <section id="secao-busca">
+            <form id="formulario-busca">
+                <label for="campo-usuario">Digite o usuário do GitHub:</label>
+                <input 
+                    type="text" 
+                    id="campo-usuario" 
+                    placeholder="Ex: raimundo-ludgerio" 
+                    required
+                >
+                
+                <button type="submit" id="botao-buscar">Buscar</button>
+            </form>
+        </section>
+
+        <section id="container-resultados">
+            <ul id="lista-repositorios"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

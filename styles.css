@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #050a10; /* Preto azulado */
+    color: #e6edf3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1f6feb; /* Azul vibrante */
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h1 {
+    color: #58a6ff;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+}
+
+#secao-busca {
+    background-color: #0d1117; /* Cinza muito escuro */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    margin-bottom: 20px;
+}
+
+#formulario-busca {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #8b949e;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background-color: #010409;
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: #58a6ff;
+}
+
+button {
+    padding: 10px;
+    background-color: #238636; /* Verde GitHub para o botão */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #2ea043; /* Feedback visual de hover */
+}
+
+#container-resultados {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#lista-repositorios {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+li {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02); /* Feedback visual */
+    border-color: #58a6ff;
+}
+
+li h3 {
+    color: #58a6ff;
+    margin-bottom: 8px;
+}
+
+li p {
+    font-size: 0.9rem;
+    color: #8b949e;
+    margin-bottom: 12px;
+}
+
+li a {
+    color: #4493f8;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade simples */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+}
